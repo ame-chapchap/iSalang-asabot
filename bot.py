@@ -1,3 +1,5 @@
+from keep_alive import keep_alive
+
 import discord
 from discord.ext import tasks
 import os
@@ -41,3 +43,7 @@ async def on_ready():
 
 # TOKENは環境変数から取得
 client.run(os.getenv('DISCORD_TOKEN'))
+
+if __name__ == "__main__":
+    keep_alive()
+    client.run(os.getenv('DISCORD_TOKEN'))
