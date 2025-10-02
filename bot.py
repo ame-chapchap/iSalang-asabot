@@ -15,7 +15,7 @@ intents.voice_states = True
 client = discord.Client(intents=intents)
 
 # ボイスチャンネルIDを設定（後で変更）
-VOICE_CHANNEL_ID = 1234567890  # ←あなたのボイスチャンネルIDに変更
+VOICE_CHANNEL_ID = 1372559165108785244  # ←あなたのボイスチャンネルIDに変更
 
 @tasks.loop(minutes=1)
 async def check_time():
